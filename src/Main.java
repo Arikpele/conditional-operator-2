@@ -3,6 +3,8 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+        task5();
 
     }
 
@@ -37,11 +39,57 @@ public class Main {
     public static void task3() {
         System.out.println("задача 3");
         int year = 2021;
-        if (year %4==0&&year%100!=0||year%400==0){
-                System.out.println(year+"год является високосным");
-            }
-else {
-                System.out.println(year+ "год не является високосным");
-            }
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
     }
+
+    public static void task4() {
+        System.out.println("задача 4");
+        int deliveryDistance = 110;
+        int day = 1;
+        int secondDay = day + 1;
+        int threeDy = secondDay + 1;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется" + day + "дней");
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            System.out.println("Потребуется" + secondDay + "дня");
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            System.out.println("Потребуется " + threeDy + " дня");
+        }
+    else {
+            System.out.println("доставки нет");
+        }
+    }
+    public static void task5() {
+        System.out.println("задача 5");
+    int monthNumber=15;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("зима");
+                break;
+                case 3:
+            case 4:
+            case 5:
+                System.out.println("весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("лето");
+                break;
+            case 9:
+                case 10:
+            case 11:
+                System.out.println("осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+        }
+    }
+
 }
